@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: blog
+  data:
+    mongodb:
+      uri: mongodb://root:example@localhost:27017
+      database: page-db
+
+server:
+  port: 3009
+
+mongo:
+  url: mongodb://root:example@localhost:27017/?authSource=admin
+  db: page-db
+  documents:
+    page: page
+    post: post
